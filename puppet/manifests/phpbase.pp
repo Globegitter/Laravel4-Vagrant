@@ -27,6 +27,9 @@ include memcached
 
 include laravel_app
 
+include nodejs
+include yeoman
+
 class { 'postgresql::server':
   config_hash => {
     'ip_mask_deny_postgres_user' => '0.0.0.0/32',
